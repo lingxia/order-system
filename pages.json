@@ -8,7 +8,7 @@
 		}, {
 			"path": "pages/menu/menu",
 			"style": {
-				"navigationBarTitleText": "",
+				"navigationBarTitleText": "韩都烧烤",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"
 			}
