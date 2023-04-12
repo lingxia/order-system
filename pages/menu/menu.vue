@@ -34,8 +34,9 @@
 											<text class="name">{{ good.name }}</text>
 											<text class="tips">{{ good.content }}</text>
 											<view class="price_and_action">
-												<text class="price">￥{{ good.price }}</text>
+												<text class="price">￥{{ good.price }}/{{good.unit }}</text>
 												<view class="btn-group" v-if="good.use_property">
+													<!--use_property === 1 表示可选规格，use_property === 0 表示不可选规格-->
 													<button type="primary" class="btn property_btn" hover-class="none"
 													 size="mini" @tap="showGoodDetailModal(item, good)">
 														选规格
@@ -114,7 +115,7 @@
 			</scroll-view>
 			<view class="action">
 				<view class="left">
-					<view class="price">￥{{ good.price }}</view>
+					<view class="price">￥{{ good.price }}/{{ good.unit }}</view>
 					<view class="props" v-if="getGoodSelectedProps(good)">
 						{{ getGoodSelectedProps(good) }}
 					</view>
@@ -150,7 +151,7 @@
 								<view class="props">{{ item.props_text }}</view>
 							</view>
 							<view class="center">
-								<text>￥{{ item.price }}</text>
+								<text>￥{{ item.price }}/{{ item.unit }}</text>
 							</view>
 							<view class="right">
 								<button type="default" plain size="mini" class="btn" hover-class="none"
@@ -334,15 +335,9 @@ export default {
 				this.cart[index].number += num
 			} else {
 				this.cart.push({
-					id: good.id,
+					...good,
 					cate_id: cate.id,
-					name: good.name,
-					price: good.price,
 					number: num,
-					image: good.images,
-					use_property: good.use_property,
-					props_text: good.props_text,
-					props: good.props
 				})
 			}
 		},
