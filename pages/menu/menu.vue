@@ -207,11 +207,11 @@ export default {
 		return {
 			goods: [], //所有商品
 			ads: [
-				{image: 'https://img-shop.qmimg.cn/s23107/2020/04/27/4ebdb582a5185358c4.jpg?imageView2/2/w/600/h/600'},
-				{image: 'https://images.qmai.cn/s23107/2020/05/08/c25de6ef72d2890630.png?imageView2/2/w/600/h/600'},
-				{image: 'https://img-shop.qmimg.cn/s23107/2020/04/10/add546c1b1561f880d.jpg?imageView2/2/w/600/h/600'},
-				{image: 'https://images.qmai.cn/s23107/2020/04/30/b3af19e0de8ed42f61.jpg?imageView2/2/w/600/h/600'},
-				{image: 'https://img-shop.qmimg.cn/s23107/2020/04/17/8aeb78516d63864420.jpg?imageView2/2/w/600/h/600'}
+				{image: 'https://mp-35a2147a-22e6-4ffc-a8d9-a740289570b3.cdn.bspapp.com/cloudstorage/d0403871-b551-461c-83b5-f7346d520478.jpeg'},
+				{image: 'https://mp-35a2147a-22e6-4ffc-a8d9-a740289570b3.cdn.bspapp.com/cloudstorage/69bbca3e-d413-48c5-bf5e-1763d525d5b8.jpeg'},
+				// {image: 'https://img-shop.qmimg.cn/s23107/2020/04/10/add546c1b1561f880d.jpg?imageView2/2/w/600/h/600'},
+				// {image: 'https://images.qmai.cn/s23107/2020/04/30/b3af19e0de8ed42f61.jpg?imageView2/2/w/600/h/600'},
+				// {image: 'https://img-shop.qmimg.cn/s23107/2020/04/17/8aeb78516d63864420.jpg?imageView2/2/w/600/h/600'}
 			],
 			loading: true,
 			currentCateId: 6905,//默认分类
