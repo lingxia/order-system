@@ -1,0 +1,149 @@
+{
+  "bsonType": "object",
+  "required": [
+    "id",
+    "name",
+    "remain_count",
+    "month_sell_count",
+    "is_sell",
+    "is_alone_sale"
+  ],
+  "permission": {
+    "read": true,
+    "create": false,
+    "update": false,
+    "delete": false
+  },
+  "properties": {
+    "_id": {
+      "description": "存储文档 ID（商品 ID），系统自动生成"
+    },
+    "id": {
+      "bsonType": "string",
+      "description": "自定义 id"
+    },
+    "cate_id": {
+      "bsonType": "string",
+      "description": "分类 id，参考`goods-cates`表",
+      "foreignKey": "goods-cates.id"
+    },
+    "name": {
+      "bsonType": "string",
+      "description": "商品名称",
+      "title": "名称",
+      "trim": "both"
+    },
+    "price": {
+      "bsonType": "float",
+      "description": "商品价格",
+      "title": "商品价格"
+    },
+    "discountPrice": {
+      "bsonType": "float",
+      "description": "优惠价格",
+      "title": "优惠价格"
+    },
+    "discountDesc": {
+      "bsonType": "string",
+      "description": "优惠说明",
+      "title": "优惠说明",
+      "trim": "both"
+    },
+    "discountCount": {
+      "bsonType": "int",
+      "description": "优惠数目",
+      "title": "优惠数目"
+    },
+    "use_property": {
+      "bsonType": "bool",
+      "description": "是否可选规格"
+    },
+    "unit": {
+      "bsonType": "string",
+      "description": "商品单位",
+      "title": "商品单位",
+      "trim": "both"
+    },
+    "goods_type": {
+      "bsonType": "int",
+      "description": "商品类型",
+      "title": "类型"
+    },
+    "sort": {
+      "bsonType": "int",
+      "description": "商品排序",
+      "title": "商品排序"
+    },
+    "content": {
+      "bsonType": "string",
+      "description": "商品详细描述",
+      "title": "详细描述",
+      "trim": "both"
+    },
+    "images": {
+      "bsonType": "string",
+      "description": "商品缩略图，用于在列表或搜索结果中预览显示",
+      "title": "缩略图地址",
+      "pattern": "^(http://|https://|/|./|@/)\\S",
+      "trim": "both"
+    },
+    "remain_count": {
+      "bsonType": "int",
+      "description": "库存数量",
+      "title": "库存数量"
+    },
+    "month_sell_count": {
+      "bsonType": "int",
+      "description": "月销量"
+    },
+    "is_sell": {
+      "bsonType": "bool",
+      "description": "是否上架销售",
+      "title": "是否上架"
+    },
+    "is_alone_sale": {
+      "bsonType": "bool",
+      "description": "是否能单独销售；如果不能单独销售，则只能作为某商品的配件或者赠品销售"
+    },
+	"property":{
+		"bsonType": "array",
+		"description": "规格",
+		"arrayType": "object",
+		"properties": {
+			"is_open_checkbox": {
+				"bsonType": "bool"
+			},
+			"id": {
+				"bsonType": "string"
+			},
+			"values": {
+				"bsonType": "array",
+				"arrayType": "object",
+				"properties": {
+					"is_default": {
+						"bsonType": "bool"
+					},
+					"id": {
+						"bsonType": "string"
+					},
+					"code": {
+						"bsonType": "string"
+					},
+					"value": {
+						"bsonType": "string"
+					}
+				}
+			}
+		}
+	},
+    "seller_note": {
+      "bsonType": "string",
+      "description": "商家备注，仅商家可见",
+      "trim": "both",
+      "permission": {
+        "read": false
+      }
+    }
+  },
+  "version": "0.0.1"
+}
