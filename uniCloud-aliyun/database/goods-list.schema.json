@@ -34,12 +34,12 @@
       "trim": "both"
     },
     "price": {
-      "bsonType": "float",
+      "bsonType": "double",
       "description": "商品价格",
       "title": "商品价格"
     },
     "discountPrice": {
-      "bsonType": "float",
+      "bsonType": "double",
       "description": "优惠价格",
       "title": "优惠价格"
     },
