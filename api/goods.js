@@ -1,335 +1,55 @@
-export default [
-    {
-        sort: 1,
-        icon: 'https://img-shop.qmimg.cn/s23107/2019/04/30/458c5a14fb2f190f96.png?imageView2/0/w/200/h/200',
-        id: 6208,
-        goods_list: [
-            {
-                sell_time_status: 0,
-                id: 24517,
-                pack_cost: '0.00',
-                sales: 1228,
-                cover_img: '',
-                property: [],
-                is_sell: true,
-                goods_type: 1,
-                entity: [
-                    {
-                        spec_id: '',
-                        trade_mark: '1212000071',
-                        id: '2b3f1ea3ecabd22e',
-                        stock: '10308.00',
-                        spec_text: [],
-                        spec: [],
-                        image: 's23107/2020/04/29/99daa7b20061efab10.jpg',
-                        num: 1,
-                        price: 18,
-                        membership_price: 0,
-                    },
-                ],
-                stall_code: '',
-                sort: 4,
-                price: 18,
-                unit: '件',
-                imageArr: [
-                    'https://img-shop.qmimg.cn/s23107/2020/04/29/99daa7b20061efab10.jpg?imageView2/2/w/600/h/600',
-                ],
-                membership_price: 0,
-                use_property: 0,
-                unit_type: 0,
-                min_buy_num: 0,
-                specs: [],
-                content: '精选北川半兵卫抹茶粉和秘制红豆泥',
-                use_spec: false,
-                stock: '10308.00',
-                type: 1,
-                is_label: 0,
-                name: '抹茶王',
-                images: 'https://img-shop.qmimg.cn/s23107/2020/04/29/99daa7b20061efab10.jpg?imageView2/2/w/400/h/400',
-            },
-            {
-                sell_time_status: 0,
-                id: 68339,
-                pack_cost: '0.00',
-                sales: 44429,
-                cover_img: '',
-                property: [
-                    {
-                        is_open_checkbox: false,
-                        id: 190,
-                        values: [
-                            {
-                                is_default: 1,
-                                id: 582,
-                                code: 'Z5EA54C3D0E4279185',
-                                value: '标准冰',
-                            },
-                            {
-                                is_default: 0,
-                                id: 583,
-                                code: 'Z5EA54C3D0E9682750',
-                                value: '去冰',
-                            },
-                        ],
-                        name: '温度',
-                        desc: null,
-                    },
-                    {
-                        is_open_checkbox: false,
-                        id: 191,
-                        values: [
-                            {
-                                is_default: 1,
-                                id: 585,
-                                code: 'Z5EA54C3D0F2A37322',
-                                value: '标准糖',
-                            },
-                            {
-                                is_default: 0,
-                                id: 586,
-                                code: 'Z5EA54C3D0F70A1000',
-                                value: '少糖',
-                            },
-                            {
-                                is_default: 0,
-                                id: 1959,
-                                code: 'Z5EA54C3D0FAFE7320',
-                                value: '不另外加糖',
-                            },
-                        ],
-                        name: '糖度',
-                        desc: null,
-                    },
-                ],
-                is_sell: true,
-                goods_type: 2,
-                entity: [
-                    {
-                        spec_id: '',
-                        trade_mark: '1010010025',
-                        id: '72cf1279c0a422ce',
-                        stock: '9999817.00',
-                        spec_text: [],
-                        spec: [],
-                        image: 's23107/2020/04/26/559a075d81060b23c7.jpg',
-                        num: 1,
-                        price: 30,
-                        membership_price: 0,
-                    },
-                ],
-                stall_code: '',
-                sort: 0,
-                price: 30,
-                unit: '件',
-                imageArr: [
-                    'https://img-shop.qmimg.cn/s23107/2020/04/26/559a075d81060b23c7.jpg?imageView2/2/w/600/h/600',
-                ],
-                membership_price: 0,
-                use_property: 1,
-                unit_type: 0,
-                min_buy_num: 0,
-                specs: [],
-                content:
-                    '饱满大颗的新鲜杨梅,满杯手工去核,搭配茉莉初雪茶底,清爽多汁',
-                use_spec: false,
-                stock: '9999817.00',
-                type: 1,
-                is_label: 0,
-                name: '霸气杨梅',
-                images: 'https://img-shop.qmimg.cn/s23107/2020/04/26/559a075d81060b23c7.jpg?imageView2/2/w/400/h/400',
-            },
-        ],
-        name: '新品推荐',
-        is_show_backstage: 0,
-    },
-    {
-        sort: 2,
-        icon: 'https://img-shop.qmimg.cn/s23107/2019/04/28/bfeae4de9de15a0f88.png?imageView2/0/w/200/h/200',
-        id: 6510,
-        goods_list: [
-            {
-                sell_time_status: 0,
-                id: 68452,
-                pack_cost: '0.00',
-                sales: 741,
-                cover_img: '',
-                property: [],
-                is_sell: true,
-                goods_type: 2,
-                entity: [
-                    {
-                        spec_id: '',
-                        trade_mark: '1212020002',
-                        id: '5efabb63696f2515',
-                        stock: '99998.00',
-                        spec_text: [],
-                        spec: [],
-                        image: 's23107/2020/04/27/98f9e17936370f5c6e.jpg',
-                        num: 1,
-                        price: 10,
-                        membership_price: 0,
-                    },
-                ],
-                stall_code: '',
-                sort: 99,
-                price: 10,
-                unit: '件',
-                imageArr: [
-                    'https://img-shop.qmimg.cn/s23107/2020/04/27/98f9e17936370f5c6e.jpg?imageView2/2/w/600/h/600',
-                ],
-                membership_price: 0,
-                use_property: 0,
-                unit_type: 0,
-                min_buy_num: 0,
-                specs: [],
-                content: '软酥蛋皮，奶香浓郁，布丁口感，外酥内嫩',
-                use_spec: false,
-                stock: '99998.00',
-                type: 1,
-                is_label: 0,
-                name: '经典蛋挞',
-                images: 'https://img-shop.qmimg.cn/s23107/2020/04/27/98f9e17936370f5c6e.jpg?imageView2/2/w/400/h/400',
-            },
-            {
-                sell_time_status: 0,
-                id: 25011,
-                pack_cost: '0.00',
-                sales: 3268,
-                cover_img: '',
-                property: [
-                    {
-                        is_open_checkbox: false,
-                        values: [
-                            {
-                                is_default: 1,
-                                id: 1298,
-                                code: 'Z5D5FA29D6070D7403',
-                                value: '草莓咩咩',
-                            },
-                            {
-                                is_default: 0,
-                                id: 1299,
-                                code: 'Z5D5FA29D60DAE4347',
-                                value: '巧克力咩咩',
-                            },
-                            {
-                                is_default: 0,
-                                id: 1300,
-                                code: 'Z5D5FA29D614794268',
-                                value: '抹茶咩咩',
-                            },
-                            {
-                                is_default: 0,
-                                id: 1302,
-                                code: 'Z5D5FA29D6221E9709',
-                                value: '肉松咩咩',
-                            },
-                        ],
-                        name: '选择一',
-                        id: 262,
-                    },
-                    {
-                        is_open_checkbox: false,
-                        values: [
-                            {
-                                is_default: 1,
-                                id: 1303,
-                                code: 'Z5D5FA29D62C482120',
-                                value: '草莓咩咩',
-                            },
-                            {
-                                is_default: 0,
-                                id: 1305,
-                                code: 'Z5D5FA29D63A198780',
-                                value: '抹茶咩咩',
-                            },
-                            {
-                                is_default: 0,
-                                id: 1306,
-                                code: 'Z5D5FA29D642F31535',
-                                value: '巧克力咩咩',
-                            },
-                            {
-                                is_default: 0,
-                                id: 1308,
-                                code: 'Z5D5FA29D6518E8070',
-                                value: '肉松咩咩',
-                            },
-                        ],
-                        name: '选择二',
-                        id: 263,
-                    },
-                    {
-                        is_open_checkbox: false,
-                        values: [
-                            {
-                                is_default: 1,
-                                id: 1309,
-                                code: 'Z5D5FA29D65F0C3220',
-                                value: '肉松咩咩',
-                            },
-                            {
-                                is_default: 0,
-                                id: 1311,
-                                code: 'Z5D5FA29D66BAB8787',
-                                value: '巧克力咩咩',
-                            },
-                            {
-                                is_default: 0,
-                                id: 1312,
-                                code: 'Z5D5FA29D672AF9110',
-                                value: '草莓咩咩',
-                            },
-                            {
-                                is_default: 0,
-                                id: 1313,
-                                code: 'Z5D5FA29D6794A2665',
-                                value: '抹茶咩咩',
-                            },
-                        ],
-                        name: '选择三',
-                        id: 366,
-                    },
-                ],
-                is_sell: true,
-                goods_type: 2,
-                entity: [
-                    {
-                        spec_id: '',
-                        trade_mark: '11110015',
-                        id: '2693ad8a72f32fdf',
-                        stock: '100000080.00',
-                        spec_text: [],
-                        spec: [],
-                        image: 's23107/2019/06/13/b92a9d35a43e67ceab.jpg',
-                        num: 1,
-                        price: 24,
-                        membership_price: 0,
-                    },
-                ],
-                stall_code: '',
-                sort: 99,
-                price: 24,
-                unit: '件',
-                imageArr: [
-                    'https://img-shop.qmimg.cn/s23107/2019/06/13/b92a9d35a43e67ceab.jpg?imageView2/2/w/600/h/600',
-                ],
-                membership_price: 0,
-                use_property: 1,
-                unit_type: 0,
-                min_buy_num: 0,
-                specs: [],
-                content:
-                    '#一口酥脆-满口爆浆的咩咩包#来啦！奈雪首次推出咩咩包系列，六个口味荟萃，任选三只即享优惠组合价~层层酥脆，让美味与分享同在~',
-                use_spec: false,
-                stock: '100000080.00',
-                type: 1,
-                is_label: 0,
-                name: '咩咩包组合装',
-                images: 'https://img-shop.qmimg.cn/s23107/2019/06/13/b92a9d35a43e67ceab.jpg?imageView2/2/w/400/h/400',
-            },
-        ],
-        name: '手作烘焙',
-        is_show_backstage: 0,
-    },
-];
+import goodCates from '@/api/goods-cates'
+const db = uniCloud.database();
+const dbCollectionName = 'goods-list';
+
+
+export default {
+	async getGoods() {
+		let data = [];
+		try {
+			const res = await db.collection(dbCollectionName).get();
+			if (res.result.code === 0) {
+				data = res.result.data;
+			}
+		} catch (e) {
+			uni.showModal({
+				content: JSON.stringify(e)
+			});
+		}
+		return data;
+	},
+
+    async getGoodsWithCates() {
+
+        const mergeGoodsWithCates = (cates = [], goods=[]) => {
+            let goodsWithCates = [];
+            let catesObj = {};
+            cates.forEach(cate=>{
+                catesObj[cate.id] = cate;
+            });
+            goods.forEach(good=>{
+                const cateId = good.cate_id;
+                if(!catesObj[cateId].goods_list) {
+                    catesObj[cateId].goods_list = [good];
+                }else {
+                    catesObj[cateId].goods_list = [...catesObj[cateId].goods_list, good];
+                }
+            });
+            goodsWithCates = Object.values(catesObj);
+            return goodsWithCates;
+        }
+
+		let data = [];
+		try {
+            const cates = await goodCates.getGoodsCates();
+			const goods = await this.getGoods();
+            console.log(cates, goods)
+            data = mergeGoodsWithCates(cates, goods);
+		} catch (e) {
+			uni.showModal({
+				content: JSON.stringify(e)
+			});
+		}
+		return data;
+	}
+}
