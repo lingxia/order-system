@@ -240,7 +240,13 @@
 			"style": {
 				"navigationStyle": "custom"
 			}
+		},{
+			"path": "pages/goods-list/edit",
+			"style": {
+				"navigationStyle": "custom"
+			}
 		}
+		
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

@@ -3,13 +3,17 @@
     "required": ["name"],
     "permission": {
         "read": true,
-        "create": false,
+        "create": true,
         "update": false,
         "delete": false
     },
     "properties": {
         "_id": { "description": "存储文档 ID（文章 ID），系统自动生成" },
-        "id": { "bsonType": "string", "description": "自定义ID", "title": "自定义id" },
+        "id": {
+            "bsonType": "string",
+            "description": "自定义ID",
+            "title": "自定义id"
+        },
         "name": {
             "bsonType": "string",
             "description": "类别名称",

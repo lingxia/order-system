@@ -16,7 +16,7 @@
       </view>
     </view>
     <view class="uni-container">
-      <unicloud-db ref="udb" :collection="collectionList" field="id,cate_id,name,price,discountPrice,discountDesc,discountCount,use_property,unit,goods_type,sort,content,images,remain_count,month_sell_count,is_sell,is_alone_sale,property,seller_note" :where="where" page-data="replace"
+      <unicloud-db ref="udb" :collection="collectionList" field="id,cate_id,name,price,discountPrice,discountDesc,discountCount,use_property,unit,goods_type,sort,content,images,remain_count,month_sell_count,is_sell,is_alone_sale,property" :where="where" page-data="replace"
         :orderby="orderby" :getcount="true" :page-size="options.pageSize" :page-current="options.pageCurrent"
         v-slot:default="{data,pagination,loading,error,options}" :options="options" loadtime="manual" @load="onqueryload">
         <uni-table ref="table" :loading="loading" :emptyText="error.message || '没有更多数据'" border stripe type="selection" @selection-change="selectionChange">
@@ -39,7 +39,6 @@
             <uni-th align="center" sortable @sort-change="sortChange($event, 'is_sell')">是否上架</uni-th>
             <uni-th align="center" sortable @sort-change="sortChange($event, 'is_alone_sale')">是否能单独销售</uni-th>
             <uni-th align="center" sortable @sort-change="sortChange($event, 'property')">规格</uni-th>
-            <uni-th align="center" filter-type="search" @filter-change="filterChange($event, 'seller_note')" sortable @sort-change="sortChange($event, 'seller_note')">商家备注</uni-th>
             <uni-th align="center">操作</uni-th>
           </uni-tr>
           <uni-tr v-for="(item,index) in data" :key="index">
@@ -61,7 +60,6 @@
             <uni-td align="center">{{item.is_sell == true ? '✅' : '❌'}}</uni-td>
             <uni-td align="center">{{item.is_alone_sale == true ? '✅' : '❌'}}</uni-td>
             <uni-td align="center">{{item.property}}</uni-td>
-            <uni-td align="center">{{item.seller_note}}</uni-td>
             <uni-td align="center">
               <view class="uni-group">
                 <button @click="navigateTo('./edit?id='+item._id, false)" class="uni-button" size="mini" type="primary">修改</button>
@@ -134,8 +132,7 @@
             "月销量": "month_sell_count",
             "是否上架": "is_sell",
             "是否能单独销售": "is_alone_sale",
-            "规格": "property",
-            "商家备注": "seller_note"
+            "规格": "property"
           }
         },
         exportExcelData: []

@@ -17,6 +17,9 @@ const validator = {
   "cate_id": {
     "rules": [
       {
+        "required": true
+      },
+      {
         "format": "string"
       }
     ],
@@ -128,20 +131,15 @@ const validator = {
   "remain_count": {
     "rules": [
       {
-        "required": true
-      },
-      {
         "format": "int"
       }
     ],
     "title": "库存数量",
+    "defaultValue": 1000,
     "label": "库存数量"
   },
   "month_sell_count": {
     "rules": [
-      {
-        "required": true
-      },
       {
         "format": "int"
       }
@@ -152,25 +150,21 @@ const validator = {
   "is_sell": {
     "rules": [
       {
-        "required": true
-      },
-      {
         "format": "bool"
       }
     ],
     "title": "是否上架",
+    "defaultValue": true,
     "label": "是否上架"
   },
   "is_alone_sale": {
     "rules": [
       {
-        "required": true
-      },
-      {
         "format": "bool"
       }
     ],
     "title": "是否能单独销售",
+    "defaultValue": true,
     "label": "是否能单独销售"
   },
   "property": {
@@ -184,15 +178,6 @@ const validator = {
     ],
     "title": "规格",
     "label": "规格"
-  },
-  "seller_note": {
-    "rules": [
-      {
-        "format": "string"
-      }
-    ],
-    "title": "商家备注",
-    "label": "商家备注"
   }
 }
 

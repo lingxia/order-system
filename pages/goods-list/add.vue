@@ -4,7 +4,7 @@
       <uni-forms-item name="id" label="自定义id" required>
         <uni-easyinput placeholder="自定义 id" v-model="formData.id"></uni-easyinput>
       </uni-forms-item>
-      <uni-forms-item name="cate_id" label="分类 id">
+      <uni-forms-item name="cate_id" label="分类 id" required>
         <uni-easyinput placeholder="分类 id，参考`goods-cates`表" v-model="formData.cate_id"></uni-easyinput>
       </uni-forms-item>
       <uni-forms-item name="name" label="名称" required>
@@ -40,23 +40,20 @@
       <uni-forms-item name="images" label="缩略图地址">
         <uni-easyinput placeholder="商品缩略图，用于在列表或搜索结果中预览显示" v-model="formData.images" trim="both"></uni-easyinput>
       </uni-forms-item>
-      <uni-forms-item name="remain_count" label="库存数量" required>
+      <uni-forms-item name="remain_count" label="库存数量">
         <uni-easyinput placeholder="库存数量" type="number" v-model="formData.remain_count"></uni-easyinput>
       </uni-forms-item>
-      <uni-forms-item name="month_sell_count" label="月销量" required>
+      <uni-forms-item name="month_sell_count" label="月销量">
         <uni-easyinput placeholder="月销量" type="number" v-model="formData.month_sell_count"></uni-easyinput>
       </uni-forms-item>
-      <uni-forms-item name="is_sell" label="是否上架" required>
+      <uni-forms-item name="is_sell" label="是否上架">
         <switch @change="binddata('is_sell', $event.detail.value)" :checked="formData.is_sell"></switch>
       </uni-forms-item>
-      <uni-forms-item name="is_alone_sale" label="是否能单独销售" required>
+      <uni-forms-item name="is_alone_sale" label="是否能单独销售">
         <switch @change="binddata('is_alone_sale', $event.detail.value)" :checked="formData.is_alone_sale"></switch>
       </uni-forms-item>
       <uni-forms-item name="property" label="规格">
         <uni-data-checkbox :multiple="true" v-model="formData.property"></uni-data-checkbox>
-      </uni-forms-item>
-      <uni-forms-item name="seller_note" label="商家备注">
-        <uni-easyinput placeholder="商家备注，仅商家可见" v-model="formData.seller_note" trim="both"></uni-easyinput>
       </uni-forms-item>
       <view class="uni-button-group">
         <button type="primary" class="uni-button" style="width: 100px;" @click="submit">提交</button>
@@ -103,12 +100,11 @@
         "sort": null,
         "content": "",
         "images": "",
-        "remain_count": null,
+        "remain_count": 1000,
         "month_sell_count": null,
-        "is_sell": null,
-        "is_alone_sale": null,
-        "property": [],
-        "seller_note": ""
+        "is_sell": true,
+        "is_alone_sale": true,
+        "property": []
       }
       return {
         formData,
