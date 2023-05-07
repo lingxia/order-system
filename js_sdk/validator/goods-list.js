@@ -10,14 +10,18 @@ const validator = {
       {
         "format": "string"
       }
-    ]
+    ],
+    "title": "自定义id",
+    "label": "自定义id"
   },
   "cate_id": {
     "rules": [
       {
         "format": "string"
       }
-    ]
+    ],
+    "title": "分类 id",
+    "label": "分类 id"
   },
   "name": {
     "rules": [
@@ -72,7 +76,9 @@ const validator = {
       {
         "format": "bool"
       }
-    ]
+    ],
+    "title": "是否可选规格",
+    "label": "是否可选规格"
   },
   "unit": {
     "rules": [
@@ -142,7 +148,9 @@ const validator = {
       {
         "format": "int"
       }
-    ]
+    ],
+    "title": "月销量",
+    "label": "月销量"
   },
   "is_sell": {
     "rules": [
@@ -164,7 +172,9 @@ const validator = {
       {
         "format": "bool"
       }
-    ]
+    ],
+    "title": "月销量",
+    "label": "月销量"
   },
   "property": {
     "rules": [
@@ -174,14 +184,18 @@ const validator = {
       {
         "arrayType": "object"
       }
-    ]
+    ],
+    "title": "规格",
+    "label": "规格"
   },
   "seller_note": {
     "rules": [
       {
         "format": "string"
       }
-    ]
+    ],
+    "title": "商家备注",
+    "label": "商家备注"
   }
 }
 

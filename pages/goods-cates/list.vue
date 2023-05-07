@@ -16,17 +16,16 @@
       </view>
     </view>
     <view class="uni-container">
-      <unicloud-db ref="udb" :collection="collectionList" field="id,name,icon,sort,description,create_date" :where="where" page-data="replace"
+      <unicloud-db ref="udb" :collection="collectionList" field="id,name,icon,sort,description" :where="where" page-data="replace"
         :orderby="orderby" :getcount="true" :page-size="options.pageSize" :page-current="options.pageCurrent"
         v-slot:default="{data,pagination,loading,error,options}" :options="options" loadtime="manual" @load="onqueryload">
         <uni-table ref="table" :loading="loading" :emptyText="error.message || '没有更多数据'" border stripe type="selection" @selection-change="selectionChange">
           <uni-tr>
-            <uni-th align="center" filter-type="search" @filter-change="filterChange($event, 'id')" sortable @sort-change="sortChange($event, 'id')">id</uni-th>
+            <uni-th align="center" filter-type="search" @filter-change="filterChange($event, 'id')" sortable @sort-change="sortChange($event, 'id')">自定义id</uni-th>
             <uni-th align="center" filter-type="search" @filter-change="filterChange($event, 'name')" sortable @sort-change="sortChange($event, 'name')">类别名称</uni-th>
             <uni-th align="center" filter-type="search" @filter-change="filterChange($event, 'icon')" sortable @sort-change="sortChange($event, 'icon')">图标地址</uni-th>
             <uni-th align="center" filter-type="range" @filter-change="filterChange($event, 'sort')" sortable @sort-change="sortChange($event, 'sort')">排序</uni-th>
             <uni-th align="center" filter-type="search" @filter-change="filterChange($event, 'description')" sortable @sort-change="sortChange($event, 'description')">类别描述</uni-th>
-            <uni-th align="center" filter-type="timestamp" @filter-change="filterChange($event, 'create_date')" sortable @sort-change="sortChange($event, 'create_date')">create_date</uni-th>
             <uni-th align="center">操作</uni-th>
           </uni-tr>
           <uni-tr v-for="(item,index) in data" :key="index">
@@ -35,9 +34,6 @@
             <uni-td align="center">{{item.icon}}</uni-td>
             <uni-td align="center">{{item.sort}}</uni-td>
             <uni-td align="center">{{item.description}}</uni-td>
-            <uni-td align="center">
-              <uni-dateformat :threshold="[0, 0]" :date="item.create_date"></uni-dateformat>
-            </uni-td>
             <uni-td align="center">
               <view class="uni-group">
                 <button @click="navigateTo('./edit?id='+item._id, false)" class="uni-button" size="mini" type="primary">修改</button>
@@ -93,12 +89,11 @@
           "filename": "goods-cates.xls",
           "type": "xls",
           "fields": {
-            "id": "id",
+            "自定义id": "id",
             "类别名称": "name",
             "图标地址": "icon",
             "排序": "sort",
-            "类别描述": "description",
-            "create_date": "create_date"
+            "类别描述": "description"
           }
         },
         exportExcelData: []

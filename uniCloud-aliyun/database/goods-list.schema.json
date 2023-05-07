@@ -21,7 +21,7 @@
     "id": {
       "bsonType": "string",
       "description": "自定义 id",
-	  "title": "自定哦id"
+	  "title": "自定义id"
     },
     "cate_id": {
       "bsonType": "string",

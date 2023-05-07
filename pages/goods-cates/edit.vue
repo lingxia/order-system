@@ -1,7 +1,7 @@
 <template>
   <view class="uni-container">
     <uni-forms ref="form" :model="formData" validateTrigger="bind">
-      <uni-forms-item name="id" label="">
+      <uni-forms-item name="id" label="自定义id">
         <uni-easyinput placeholder="自定义ID" v-model="formData.id"></uni-easyinput>
       </uni-forms-item>
       <uni-forms-item name="name" label="类别名称" required>
@@ -15,9 +15,6 @@
       </uni-forms-item>
       <uni-forms-item name="description" label="类别描述">
         <uni-easyinput placeholder="类别描述" v-model="formData.description" trim="both"></uni-easyinput>
-      </uni-forms-item>
-      <uni-forms-item name="create_date" label="">
-        <uni-datetime-picker return-type="timestamp" v-model="formData.create_date"></uni-datetime-picker>
       </uni-forms-item>
       <view class="uni-button-group">
         <button type="primary" class="uni-button" style="width: 100px;" @click="submit">提交</button>
@@ -55,8 +52,7 @@
         "name": "",
         "icon": "",
         "sort": null,
-        "description": "",
-        "create_date": null
+        "description": ""
       }
       return {
         formData,
@@ -120,7 +116,7 @@
         uni.showLoading({
           mask: true
         })
-        db.collection(dbCollectionName).doc(id).field("id,name,icon,sort,description,create_date").get().then((res) => {
+        db.collection(dbCollectionName).doc(id).field("id,name,icon,sort,description").get().then((res) => {
           const data = res.result.data[0]
           if (data) {
             this.formData = data

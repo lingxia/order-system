@@ -7,7 +7,9 @@ const validator = {
       {
         "format": "string"
       }
-    ]
+    ],
+    "title": "自定义id",
+    "label": "自定义id"
   },
   "name": {
     "rules": [
@@ -50,16 +52,6 @@ const validator = {
     ],
     "title": "类别描述",
     "label": "类别描述"
-  },
-  "create_date": {
-    "rules": [
-      {
-        "format": "timestamp"
-      }
-    ],
-    "defaultValue": {
-      "$env": "now"
-    }
   }
 }
 
