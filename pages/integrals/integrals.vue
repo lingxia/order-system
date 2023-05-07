@@ -48,7 +48,7 @@
 										<view class="font-size-sm text-color-assist">积分</view>
 									</view>
 									<view v-if="item.amount > 0" class="d-flex align-items-center font-size-sm text-color-assist" style="margin: 0 10rpx;">+</view>
-									<view  v-if="item.amount > 0"class="d-flex align-items-baseline">
+									<view  v-if="item.amount > 0" class="d-flex align-items-baseline">
 										<view class="font-size-base text-color-primary mr-10">{{ parseFloat(item.amount) }}</view>
 										<view class="font-size-sm text-color-assist">元</view>
 									</view>

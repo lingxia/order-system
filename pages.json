@@ -212,7 +212,30 @@
 				"navigationBarBackgroundColor": "#ffffff",
 				"disableScroll": true
 			}
-        }
+        },{
+			"path": "pages/goods-list/add",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/goods-list/list",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/goods-cates/add",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/goods-cates/list",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
