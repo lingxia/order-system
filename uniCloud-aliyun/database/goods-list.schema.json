@@ -87,7 +87,6 @@
       "bsonType": "string",
       "description": "商品缩略图，用于在列表或搜索结果中预览显示",
       "title": "缩略图地址",
-      "pattern": "^(http://|https://|/|./|@/)\\S",
       "trim": "both"
     },
     "remain_count": {

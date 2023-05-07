@@ -120,9 +120,6 @@ const validator = {
     "rules": [
       {
         "format": "string"
-      },
-      {
-        "pattern": "^(http://|https://|/|./|@/)\\S"
       }
     ],
     "title": "缩略图地址",

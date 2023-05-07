@@ -27,9 +27,6 @@ const validator = {
     "rules": [
       {
         "format": "string"
-      },
-      {
-        "pattern": "^(http://|https://|/|./|@/)\\S"
       }
     ],
     "title": "图标地址",

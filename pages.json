@@ -235,6 +235,11 @@
 			"style": {
 				"navigationStyle": "custom"
 			}
+		},{
+			"path": "pages/goods-cates/edit",
+			"style": {
+				"navigationStyle": "custom"
+			}
 		}
     ],
 	"globalStyle": {

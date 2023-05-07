@@ -20,7 +20,6 @@
             "bsonType": "string",
             "description": "类别图标/图片地址",
             "title": "图标地址",
-            "pattern": "^(http://|https://|/|./|@/)\\S",
             "trim": "both"
         },
         "sort": {
