@@ -41,6 +41,9 @@ const validator = {
   "price": {
     "rules": [
       {
+        "required": true
+      },
+      {
         "format": "double"
       }
     ],
@@ -85,6 +88,9 @@ const validator = {
   },
   "unit": {
     "rules": [
+      {
+        "required": true
+      },
       {
         "format": "string"
       }

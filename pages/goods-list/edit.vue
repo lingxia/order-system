@@ -10,7 +10,7 @@
       <uni-forms-item name="name" label="名称" required>
         <uni-easyinput placeholder="商品名称" v-model="formData.name" trim="both"></uni-easyinput>
       </uni-forms-item>
-      <uni-forms-item name="price" label="商品价格">
+      <uni-forms-item name="price" label="商品价格" required>
         <uni-easyinput placeholder="商品价格" type="number" v-model="formData.price"></uni-easyinput>
       </uni-forms-item>
       <uni-forms-item name="discountPrice" label="优惠价格">
@@ -25,7 +25,7 @@
       <uni-forms-item name="use_property" label="是否可选规格">
         <switch @change="binddata('use_property', $event.detail.value)" :checked="formData.use_property"></switch>
       </uni-forms-item>
-      <uni-forms-item name="unit" label="商品单位">
+      <uni-forms-item name="unit" label="商品单位" required>
         <uni-easyinput placeholder="商品单位" v-model="formData.unit" trim="both"></uni-easyinput>
       </uni-forms-item>
       <uni-forms-item name="goods_type" label="类型">

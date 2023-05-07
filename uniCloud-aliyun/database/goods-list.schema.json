@@ -1,6 +1,6 @@
 {
     "bsonType": "object",
-    "required": ["id", "cate_id", "name"],
+    "required": ["id", "cate_id", "name", "unit", "price"],
     "permission": {
         "read": true,
         "create": true,
