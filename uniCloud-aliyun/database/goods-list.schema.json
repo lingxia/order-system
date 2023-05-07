@@ -16,16 +16,18 @@
   },
   "properties": {
     "_id": {
-      "description": "存储文档 ID（商品 ID），系统自动生成"
+      "description": "存储文档 ID（商品 ID），系统自动生成",
     },
     "id": {
       "bsonType": "string",
-      "description": "自定义 id"
+      "description": "自定义 id",
+	  "title": "自定哦id"
     },
     "cate_id": {
       "bsonType": "string",
       "description": "分类 id，参考`goods-cates`表",
-      "foreignKey": "goods-cates.id"
+      "foreignKey": "goods-cates.id",
+	  "title": "分类 id"
     },
     "name": {
       "bsonType": "string",
@@ -55,6 +57,7 @@
       "title": "优惠数目"
     },
     "use_property": {
+	  "title": "是否可选规格",
       "bsonType": "bool",
       "description": "是否可选规格"
     },
@@ -94,7 +97,8 @@
     },
     "month_sell_count": {
       "bsonType": "int",
-      "description": "月销量"
+      "description": "月销量",
+	  "title": "月销量",
     },
     "is_sell": {
       "bsonType": "bool",
@@ -103,15 +107,17 @@
     },
     "is_alone_sale": {
       "bsonType": "bool",
-      "description": "是否能单独销售；如果不能单独销售，则只能作为某商品的配件或者赠品销售"
+      "description": "是否能单独销售；如果不能单独销售，则只能作为某商品的配件或者赠品销售",
+	  "title": "月销量",
     },
 	"property":{
 		"bsonType": "array",
 		"description": "规格",
 		"arrayType": "object",
+		"title": "规格",
 		"properties": {
 			"is_open_checkbox": {
-				"bsonType": "bool"
+				"bsonType": "bool",
 			},
 			"id": {
 				"bsonType": "string"
@@ -139,6 +145,7 @@
     "seller_note": {
       "bsonType": "string",
       "description": "商家备注，仅商家可见",
+	  "title": "商家备注",
       "trim": "both",
       "permission": {
         "read": false
