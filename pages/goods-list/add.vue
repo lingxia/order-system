@@ -49,7 +49,7 @@
       <uni-forms-item name="is_sell" label="是否上架" required>
         <switch @change="binddata('is_sell', $event.detail.value)" :checked="formData.is_sell"></switch>
       </uni-forms-item>
-      <uni-forms-item name="is_alone_sale" label="月销量" required>
+      <uni-forms-item name="is_alone_sale" label="是否能单独销售" required>
         <switch @change="binddata('is_alone_sale', $event.detail.value)" :checked="formData.is_alone_sale"></switch>
       </uni-forms-item>
       <uni-forms-item name="property" label="规格">

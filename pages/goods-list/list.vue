@@ -37,7 +37,7 @@
             <uni-th align="center" filter-type="range" @filter-change="filterChange($event, 'remain_count')" sortable @sort-change="sortChange($event, 'remain_count')">库存数量</uni-th>
             <uni-th align="center" filter-type="range" @filter-change="filterChange($event, 'month_sell_count')" sortable @sort-change="sortChange($event, 'month_sell_count')">月销量</uni-th>
             <uni-th align="center" sortable @sort-change="sortChange($event, 'is_sell')">是否上架</uni-th>
-            <uni-th align="center" sortable @sort-change="sortChange($event, 'is_alone_sale')">月销量</uni-th>
+            <uni-th align="center" sortable @sort-change="sortChange($event, 'is_alone_sale')">是否能单独销售</uni-th>
             <uni-th align="center" sortable @sort-change="sortChange($event, 'property')">规格</uni-th>
             <uni-th align="center" filter-type="search" @filter-change="filterChange($event, 'seller_note')" sortable @sort-change="sortChange($event, 'seller_note')">商家备注</uni-th>
             <uni-th align="center">操作</uni-th>
@@ -131,8 +131,9 @@
             "详细描述": "content",
             "缩略图地址": "images",
             "库存数量": "remain_count",
-            "月销量": "is_alone_sale",
+            "月销量": "month_sell_count",
             "是否上架": "is_sell",
+            "是否能单独销售": "is_alone_sale",
             "规格": "property",
             "商家备注": "seller_note"
           }

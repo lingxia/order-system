@@ -173,8 +173,8 @@ const validator = {
         "format": "bool"
       }
     ],
-    "title": "月销量",
-    "label": "月销量"
+    "title": "是否能单独销售",
+    "label": "是否能单独销售"
   },
   "property": {
     "rules": [
